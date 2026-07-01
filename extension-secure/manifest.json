@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Accurate Branch Lookup (Secure)",
+  "version": "2.0",
+  "description": "Secure branch customer lookup with email + OTP 123456",
+  "homepage_url": "https://ikamai-sandbox.firebaseio.com/sdfhsiuahef4rhaelrwheg54",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://ikamai-sandbox.firebaseio.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Branch Lookup"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.accurate.id/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

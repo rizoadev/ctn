@@ -1,0 +1,72 @@
+#ext-lookup-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999999;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.ext-modal-box {
+    background: white;
+    width: 450px;
+    border-radius: 8px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+.ext-modal-header {
+    padding: 15px;
+    background: #60a917;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.ext-modal-body {
+    padding: 20px;
+}
+
+#ext-search-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#ext-results-list {
+    margin-top: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.ext-item {
+    padding: 12px;
+    border-bottom: 1px solid #f5f5f5;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.ext-item:hover {
+    background: #f0f9eb;
+}
+
+.ext-item-name {
+    font-weight: bold;
+    color: #333;
+    display: block;
+}
+
+.ext-item-meta {
+    font-size: 11px;
+    color: #888;
+}

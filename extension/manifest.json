@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Accurate Branch Lookup",
+  "version": "1.0",
+  "description": "Inject custom lookup button for Branch Customer field",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://ikamai-sandbox.firebaseio.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.accurate.id/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
